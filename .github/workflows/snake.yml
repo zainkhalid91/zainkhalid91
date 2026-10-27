@@ -19,18 +19,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Runs before the snake: that action runs as root in Docker and leaves dist unwritable.
+      # Replaces github-readme-activity-graph.vercel.app, which stopped serving images.
+      - name: Activity graph
+        run: python3 scripts/activity_graph.py ${{ github.repository_owner }} dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-
-      # Replaces github-readme-activity-graph.vercel.app, which stopped serving images.
-      - name: Activity graph
-        run: python3 scripts/activity_graph.py ${{ github.repository_owner }} dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
