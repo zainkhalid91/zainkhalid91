@@ -1,5 +1,6 @@
-# Draws the snake eating the contribution graph and publishes it to the "output" branch.
-name: Snake
+# Draws the snake eating the contribution graph and the 31-day activity graph,
+# and publishes both to the "output" branch.
+name: Profile graphics
 
 on:
   schedule:
@@ -16,12 +17,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v4
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
+
+      # Replaces github-readme-activity-graph.vercel.app, which stopped serving images.
+      - name: Activity graph
+        run: python3 scripts/activity_graph.py ${{ github.repository_owner }} dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:

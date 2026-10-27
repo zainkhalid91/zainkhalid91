@@ -42,10 +42,20 @@ It grows with every commit and redraws every day ([kodama](https://github.com/or
 </p>
 
 <p align="center">
-  <img width="100%" alt="Contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=zainkhalid91&theme=github-compact&hide_border=true&area=true" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zainkhalid91/zainkhalid91/output/activity-graph-dark.svg" />
+    <img width="100%" alt="My contributions over the last 31 days" src="https://raw.githubusercontent.com/zainkhalid91/zainkhalid91/output/activity-graph.svg" />
+  </picture>
 </p>
 
 ## Latest projects
+
+### ⏳ [Compose Loaders](https://github.com/zainkhalid91/compose-loaders)
+45 loading indicators in pure Jetpack Compose, with new ones every week. No Lottie files or images: each loader is one composable drawn on a `Canvas`, with zero allocations per frame. Screen reader labels, reduced motion that never freezes, and one config object for speed, direction and colour. Android and Compose Desktop.
+
+<a href="https://github.com/zainkhalid91/compose-loaders"><img src="https://raw.githubusercontent.com/zainkhalid91/compose-loaders/main/docs/media/all.gif" width="720" alt="All 45 Compose Loaders animating" /></a>
+
+`implementation("com.github.zainkhalid91.compose-loaders:loaders:0.2.0")` · [Release notes and demo video](https://github.com/zainkhalid91/compose-loaders/releases/latest)
 
 ### 🌃 [NEON//ASCII](https://github.com/zainkhalid91/Cyberpunk-ASCII-World-)
 A playable, rainy cyberpunk side-scroller rendered as live ASCII art. One runtime shader turns each cell into a glyph by brightness. Compose Multiplatform, for Windows and Android.
