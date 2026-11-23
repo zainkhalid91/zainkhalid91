@@ -51,11 +51,13 @@ It grows with every commit and redraws every day ([kodama](https://github.com/or
 ## Latest projects
 
 ### ⏳ [Compose Loaders](https://github.com/zainkhalid91/compose-loaders)
-45 loading indicators in pure Jetpack Compose, with new ones every week. No Lottie files or images: each loader is one composable drawn on a `Canvas`, with zero allocations per frame. Screen reader labels, reduced motion that never freezes, and one config object for speed, direction and colour. Android and Compose Desktop.
+46 loading indicators in pure Jetpack Compose, with new ones every week. No Lottie files or images: each loader is one composable drawn on a `Canvas`, with zero allocations per frame. **New in 0.3.0:** a `LoadingButton` that turns into its own loader and ends in a tick or a cross, loaders that end in a result instead of vanishing, no spinner flash on fast requests, your logo as a loader, and frozen loaders for stable screenshot tests. Android and Compose Desktop.
 
-<a href="https://github.com/zainkhalid91/compose-loaders"><img src="https://raw.githubusercontent.com/zainkhalid91/compose-loaders/main/docs/media/all.gif" width="720" alt="All 45 Compose Loaders animating" /></a>
+<a href="https://github.com/zainkhalid91/compose-loaders"><img src="https://raw.githubusercontent.com/zainkhalid91/compose-loaders/main/docs/media/all.gif" width="720" alt="All 46 Compose Loaders animating" /></a>
 
-`implementation("com.github.zainkhalid91.compose-loaders:loaders:0.2.0")` · [Release notes and demo video](https://github.com/zainkhalid91/compose-loaders/releases/latest)
+<a href="https://github.com/zainkhalid91/compose-loaders#real-life-patterns"><img src="https://raw.githubusercontent.com/zainkhalid91/compose-loaders/main/docs/media/loading-button.gif" width="380" alt="LoadingButton turning into a loader, then a tick or a cross" /></a>
+
+`implementation("com.github.zainkhalid91.compose-loaders:loaders:0.3.0")` · [0.3.0 release notes and demo video](https://github.com/zainkhalid91/compose-loaders/releases/latest)
 
 ### 🌃 [NEON//ASCII](https://github.com/zainkhalid91/Cyberpunk-ASCII-World-)
 A playable, rainy cyberpunk side-scroller rendered as live ASCII art. One runtime shader turns each cell into a glyph by brightness. Compose Multiplatform, for Windows and Android.
