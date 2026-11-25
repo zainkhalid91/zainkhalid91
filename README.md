@@ -51,13 +51,13 @@ It grows with every commit and redraws every day ([kodama](https://github.com/or
 ## Latest projects
 
 ### 🎛️ [Compose Motion Icons](https://github.com/zainkhalid91/compose-motion-icons)
-Icons that move between states instead of swapping: a menu that crosses into an X, a heart that pops and throws sparks, a bell that rings as its badge lands, a sun that rolls into a moon. 20 icons in pure Jetpack Compose, one line each (`HeartIcon(liked = isLiked)`), with no Lottie files or assets. Android, desktop and web.
+Icons that move between states instead of swapping: a menu that crosses into an X, a heart that pops and throws sparks, a cart that catches each item you add, an envelope that opens and lets its letter rise out. 40 icons in pure Jetpack Compose across navigation, media, camera, social, messaging, shopping, status and system, one line each (`HeartIcon(liked = isLiked)`), with no Lottie files or assets. Android, desktop and web.
 
-<a href="https://github.com/zainkhalid91/compose-motion-icons"><img src="https://raw.githubusercontent.com/zainkhalid91/compose-motion-icons/main/docs/media/all.gif" width="720" alt="All 20 Compose Motion Icons animating" /></a>
+<a href="https://github.com/zainkhalid91/compose-motion-icons"><img src="https://raw.githubusercontent.com/zainkhalid91/compose-motion-icons/main/docs/media/all.gif" width="720" alt="All 40 Compose Motion Icons animating, grouped by category" /></a>
 
 <a href="https://github.com/zainkhalid91/compose-motion-icons"><img src="https://raw.githubusercontent.com/zainkhalid91/compose-motion-icons/main/docs/media/before-after.gif" width="560" alt="Swapping icons compared with Compose Motion Icons" /></a>
 
-`implementation("com.github.zainkhalid91.compose-motion-icons:icons:0.1.0")` · [Try every icon in your browser](https://zainkhalid91.github.io/compose-motion-icons/)
+`implementation("com.github.zainkhalid91.compose-motion-icons:icons:0.3.0")` · [Try all 40 in your browser](https://zainkhalid91.github.io/compose-motion-icons/)
 
 ### ⏳ [Compose Loaders](https://github.com/zainkhalid91/compose-loaders)
 46 loading indicators in pure Jetpack Compose, with new ones every week. No Lottie files or images: each loader is one composable drawn on a `Canvas`, with zero allocations per frame. **New in 0.3.0:** a `LoadingButton` that turns into its own loader and ends in a tick or a cross, loaders that end in a result instead of vanishing, no spinner flash on fast requests, your logo as a loader, and frozen loaders for stable screenshot tests. Android and Compose Desktop.
