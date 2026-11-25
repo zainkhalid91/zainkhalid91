@@ -15,11 +15,14 @@ games, dials, simulations and apps that run on Android and Windows from the same
 
 ## My GitHub, as a bonsai
 
-It grows with every commit and redraws every day ([kodama](https://github.com/orijitghosh/kodama)).
+It grows with every commit and redraws every night ([kodama](https://github.com/orijitghosh/kodama)), and it's winter, so it's under snow.
 
 <p align="center">
-  <img src="https://kodama-sigma.vercel.app/zainkhalid91.svg?tint=lang" alt="My GitHub history drawn as a bonsai" />
+  <img src="https://raw.githubusercontent.com/zainkhalid91/zainkhalid91/output/kodama-winter.svg" alt="My GitHub history drawn as a bonsai, in winter with snow" />
 </p>
+<!-- Spring: switch back to the live kodama tree.
+  <img src="https://kodama-sigma.vercel.app/zainkhalid91.svg?tint=lang" alt="My GitHub history drawn as a bonsai" />
+-->
 
 ## Stats
 

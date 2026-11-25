@@ -1,0 +1,22 @@
+diff --git a/engine/src/facts.ts b/engine/src/facts.ts
+index 4d6165c..ea9a2ff 100644
+--- a/engine/src/facts.ts
++++ b/engine/src/facts.ts
+@@ -181,6 +181,8 @@ export function potTierFor(wholeYears: number): PotTier {
+ // ---------------------------------------------------------------------------
+ 
+ export function seasonFor(date: string): Season {
++  const forced = (globalThis as { KODAMA_SEASON?: Season }).KODAMA_SEASON;
++  if (forced) return forced;
+   const { m } = parseDate(date);
+   if (m >= 3 && m <= 5) return "spring";
+   if (m >= 6 && m <= 8) return "summer";
+@@ -189,6 +191,8 @@ export function seasonFor(date: string): Season {
+ }
+ 
+ export function seasonalEventsFor(date: string): SeasonalEvent[] {
++  const forced = (globalThis as { KODAMA_EVENTS?: SeasonalEvent[] }).KODAMA_EVENTS;
++  if (forced) return forced;
+   const { m, d } = parseDate(date);
+   const events: SeasonalEvent[] = [];
+   if (m === 4 && d >= 1 && d <= 7) events.push({ kind: "hanami" });

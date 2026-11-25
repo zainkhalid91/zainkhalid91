@@ -1,4 +1,4 @@
-# Draws the snake eating the contribution graph and the 31-day activity graph,
+# Draws the snake eating the contribution graph, the 31-day activity graph and the winter bonsai,
 # and publishes both to the "output" branch.
 name: Profile graphics
 
@@ -25,6 +25,22 @@ jobs:
         run: python3 scripts/activity_graph.py ${{ github.repository_owner }} dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # kodama's bonsai, drawn with kodama's own engine but with winter pulled forward to November
+      # (kodama only snows from 1 December). Pinned to a known commit; the patch adds the override.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Winter bonsai
+        run: |
+          git clone --quiet https://github.com/orijitghosh/kodama /tmp/kodama
+          git -C /tmp/kodama checkout --quiet 88f8c9cea17f81df1e073f64829083eed13f73f2
+          git -C /tmp/kodama apply "$PWD/scripts/kodama-winter.patch"
+          cd /tmp/kodama
+          npx -y pnpm@10.33.2 install --frozen-lockfile --filter @kodama/engine...
+          npx -y pnpm@10.33.2 --filter @kodama/engine build
+          cd -
+          node scripts/winter_kodama.mjs /tmp/kodama/engine/dist ${{ github.repository_owner }} dist/kodama-winter.svg
 
       - uses: Platane/snk@v3
         with:
