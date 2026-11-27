@@ -7,9 +7,9 @@
 </a>
 
 I build Android apps in Kotlin and Jetpack Compose, and I like drawing things by hand on a `Canvas`:
-games, dials, simulations and apps that run on Android and Windows from the same code.
+games, dials, simulations and apps that run on Android and Windows from the same code. Lately also native Windows tools in C#.
 
-<img src="https://skillicons.dev/icons?i=kotlin,androidstudio,gradle,java,git,github,figma&theme=dark" alt="Kotlin, Android Studio, Gradle, Java, Git, GitHub, Figma" />
+<img src="https://skillicons.dev/icons?i=kotlin,androidstudio,gradle,java,cs,dotnet,git,github,figma&theme=dark" alt="Kotlin, Android Studio, Gradle, Java, C#, .NET, Git, GitHub, Figma" />
 
 </div>
 
@@ -52,6 +52,16 @@ It's winter, so the bonsai is under snow, and it gets dressed up as Christmas ge
 </p>
 
 ## Latest projects
+
+### 🎡 [Spoke](https://github.com/zainkhalid91/Spoke)
+A radial command wheel for Windows. Press a shortcut and a wheel of your apps, sites, folders, snippets and tools opens around the pointer. Built-in screenshot, colour picker and clipboard image history, several wheels with their own shortcuts, and **drop mode**: drag images onto the wheel to convert them, with the estimated output size on every format before you let go. Native C# with .NET 10 Native AOT and Direct2D, under 30 ms to open. Free and open source (MIT).
+
+<table>
+<tr>
+<td><a href="https://github.com/zainkhalid91/Spoke"><img src="https://raw.githubusercontent.com/zainkhalid91/Spoke/main/docs/themes.png" width="440" alt="Spoke's wheel in four themes" /></a></td>
+<td><a href="https://github.com/zainkhalid91/Spoke"><img src="https://raw.githubusercontent.com/zainkhalid91/Spoke/main/docs/drop-mode.png" width="300" alt="Spoke's drop mode wheel with an estimated size on each format" /></a></td>
+</tr>
+</table>
 
 ### 🎛️ [Compose Motion Icons](https://github.com/zainkhalid91/compose-motion-icons)
 Icons that move between states instead of swapping: a menu that crosses into an X, a heart that pops and throws sparks, a cart that catches each item you add, an envelope that opens and lets its letter rise out. 40 icons in pure Jetpack Compose across navigation, media, camera, social, messaging, shopping, status and system, one line each (`HeartIcon(liked = isLiked)`), with no Lottie files or assets. Android, desktop and web.
